@@ -1,8 +1,22 @@
 {
     "workbench.colorCustomizations": {
-        "activityBar.background": "#462230",
-        "titleBar.activeBackground": "#623043",
-        "titleBar.activeForeground": "#FCF9FA"
+        "activityBar.background": "#47212f",
+        "titleBar.activeBackground": "#241118",
+        "titleBar.activeForeground": "#e7e7e7",
+        "activityBar.activeBackground": "#47212f",
+        "activityBar.activeBorder": "#486d33",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#486d33",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "statusBar.background": "#241118",
+        "statusBar.border": "#241118",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#47212f",
+        "titleBar.border": "#241118",
+        "titleBar.inactiveBackground": "#24111899",
+        "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "python.pythonPath": ".venv\\Scripts\\python.exe"
+    "python.pythonPath": "C:\\Users\\Souradeepta Biswas\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
+    "peacock.color": "#241118"
 }
