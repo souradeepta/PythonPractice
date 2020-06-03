@@ -18,3 +18,4 @@ eg. `````from functools import reduce````
 7. Decrementing for loop achieved with -1 step ````ans = [x for x in range(5,0, -1)]````
 8. Integers within the 32-bit signed integer range: [−2**31,  2**31 − 1]
 9. middle value for divide and conquer should be ```middle = low + (high - low)//2`` [https://ai.googleblog.com/2006/06/extra-extra-read-all-about-it-nearly.html]
+10. https://systemdesignprimer.com/
