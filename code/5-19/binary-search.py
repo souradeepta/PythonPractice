@@ -6,16 +6,16 @@
 #  it does have some shortcomings, such as its reliance on the // operator
 # time complexity of binary search O(log n).
 
-def binary_search(input: list, target: int) -> int:
+def binary_search(input_list: list, target: int) -> int:
     low = 0
-    high = len(input)-1
+    high = len(input_list)-1
     index = -1
     while (low <= high) and (index == -1):
         mid = (low+high)//2
-        if input[mid] == target:
+        if input_list[mid] == target:
             index = mid
         else:
-            if target < input[mid]:
+            if target < input_list[mid]:
                 high = mid - 1
             else:
                 low = mid + 1

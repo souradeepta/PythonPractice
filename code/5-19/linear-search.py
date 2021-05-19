@@ -4,8 +4,8 @@
 # in our input list.
 # does not require that a collection be sorted before searching begins.
 
-def linear_search(input: list, target: int) -> int:
-    for index, value in enumerate(input):
+def linear_search(input_list: list, target: int) -> int:
+    for index, value in enumerate(input_list):
         if value == target:
             return index
     return -1
