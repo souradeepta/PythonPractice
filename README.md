@@ -41,3 +41,5 @@ Output:
 ````
 [[John, Mary], [Alice, Bob]]
 ````
+12. In java, array copy is using
+`````public static void arraycopy(Object src, int srcPos, Object dest, int destPos, int length)```
