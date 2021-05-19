@@ -19,3 +19,25 @@ eg. `````from functools import reduce````
 8. Integers within the 32-bit signed integer range: [−2**31,  2**31 − 1]
 9. middle value for divide and conquer should be ```middle = low + (high - low)//2`` [https://ai.googleblog.com/2006/06/extra-extra-read-all-about-it-nearly.html]
 10. https://systemdesignprimer.com/
+11. In Java, array copy is
+
+Simple Array:
+````
+String[] array = new String[] {"John", "Mary", "Bob"};
+System.out.println(Arrays.toString(array));
+````
+Output:
+````
+[John, Mary, Bob]
+````
+Nested Array:
+````
+String[][] deepArray = new String[][] {{"John", "Mary"}, {"Alice", "Bob"}};
+System.out.println(Arrays.toString(deepArray));
+//output: [[Ljava.lang.String;@106d69c, [Ljava.lang.String;@52e922]
+System.out.println(Arrays.deepToString(deepArray));
+````
+Output:
+````
+[[John, Mary], [Alice, Bob]]
+````
