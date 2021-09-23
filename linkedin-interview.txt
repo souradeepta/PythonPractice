@@ -1,0 +1,76 @@
+# Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+ #      An input string is valid if:
+ #      Open brackets must be closed by the same type of brackets.
+ #      Open brackets must be closed in the correct order.
+
+# {()}[]
+
+# {(})
+#]
+#   s = {(
+
+#       result s.empty() == 0
+
+def validate(input):
+    bracket_map = {
+        ')' = '(',
+        '}' = '{',
+        ']' = '['
+
+    }
+    stack = []
+
+    for char in input:
+        if bracket_map[char] == stack[-1]:
+            stack.pop()
+        else:
+            stack.append(char)
+
+    return len(stack) == 0
+
+
+# Given the words in the magazine and the words in the ransom note, print Yes if he can replicate his ransom note exactly using whole words from the magazine; otherwise, print No.
+# Example: Magazine: "this is an article about trees, oak trees live for 100s of years ...."
+# Note: "I will live upto to 100 years and I will climb that oak trees"
+# case sensitive: awake!= Awake
+
+def ransom(maga, note):
+    if maga is None or len(maga) < len(note):
+        return "No"
+
+    word_map = {}
+
+    words = maga.split(' ')
+    for word in words:
+        if word not in word_map:
+            word_map[word] = 1
+        else:
+            word_map[word] += 1
+
+    note_words = note.split(' ')
+
+    for w in note_words:
+        if w in word_map:
+            if word_map[w] > 0:
+                word_map[w] -= 1
+            else:
+                # del word_map[w]
+                return "No"
+        else:
+            return "No"
+
+    return "yes"
+
+
+
+input1 = "This is a boy who does work"
+input2 = "This is a boy"
+
+@pytest.test
+def test_valid_ransom(input1, input2):
+    assert(ransom(input1, input2) == "yes")
+
+input1 = ""
+input2 = "This is a boy"
+def test_invalid_ransom(input1, input2):
+    assert(ransom(input1, input2) == "no")

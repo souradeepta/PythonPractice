@@ -36,6 +36,6 @@ stack.push(12)
 stack.push(25)
 stack.push(22)
 stack.pop()
-stack.push(3)        # Type error
+stack.push(3)
 stack.print()
 print(stack.get_max())
